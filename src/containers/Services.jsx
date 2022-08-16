@@ -21,7 +21,7 @@ const Services = () => {
           heigthImg='120px'
           animate={{ rotate: 360 }}
           initial={{ rotate: 0 }}
-          transition={{ repeat: Infinity, duration: 5, delay: 0.2, ease: 'linear' }}
+          transition={{ repeat: Infinity, duration: 8, delay: 0.2, ease: 'linear' }}
         />
         <CardHabilities
           image={frontendIcon}
@@ -37,7 +37,7 @@ const Services = () => {
         <CardHabilities
           image={servidorBases}
           hability="Servidor y Bases de Datos Backend"
-          description="Modelo de Bases de datos para almacenar información intercambiable dinámicamente."
+          description="Modelo de Bases de datos para almacenar información modificable dinámicamente."
           widthImg='190px'
           heigthImg='120px'
           animate={{ scale: [1.05, 1.15, 1.05] }}

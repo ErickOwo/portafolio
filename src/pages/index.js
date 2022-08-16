@@ -3,6 +3,7 @@ import Image from 'next/image';
 import photo from '@images/photo3.jpg';
 
 import Services from '@containers/Services';
+import Qualities from '@containers/Qualities';
 
 export default function Home() {
   return (
@@ -17,8 +18,8 @@ export default function Home() {
       </Head>
 
       <main className="w-full min-h-screen bg-slate-200 pb-12">
-        <div className="flex flex-col items-center p-12 pt-20 gap-2 font-Roboto border-b border-slate-500 shadow-[0_-35px_60px_15px_rgba(0,0,0,0.7)]">
-          <div className="flex max-w-[200px] rounded-lg relative overflow-hidden shadow-[0_35px_60px\15px_rgba(170,170,170,0.3)]">
+        <div className="flex flex-col items-center p-12 pt-20 gap-2 font-Roboto border-b border-slate-500 shadow-[0_-35px_60px_15px_rgba(0,0,0,0.5)]">
+          <div className="flex max-w-[200px] rounded-lg relative overflow-hidden shadow-[0_0_100px_2px_rgba(0,0,0,0.2)]">
             <Image src={photo} width="300px" height="520px" />
           </div>
           <div className="flex flex-col items-center mt-2">
@@ -27,6 +28,7 @@ export default function Home() {
           </div>
         </div>
         <Services />
+        <Qualities />
       </main>
     </div>
   );

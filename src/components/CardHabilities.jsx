@@ -14,7 +14,7 @@ const CardHabilities = ({hability, description, image, animate=null, initial=nul
       >
         <Image src={image} width={widthImg} height={heigthImg} />
       </motion.div>
-      <h4 className="text-lg font-semibold">{ hability }</h4>
+      <h4 className="text-lg font-semibold text-center">{ hability }</h4>
       <p className="mt-2">{ description }</p>
     </motion.div>
   )

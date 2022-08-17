@@ -30,7 +30,7 @@ const Qualities = () => {
   return (
     <div className="flex flex-col items-center gap-5 mt-20">
       <div className="p-2 pt-8 w-max flex flex-col items-center border-b border-emerald-500">
-        <h3 className="font-semibold text-lg">Aptitudes</h3>
+        <h3 className="font-semibold text-xl">Aptitudes</h3>
         <span>¿Con qué tecnologías trabajo?</span>
       </div>
       <div>

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 const CardHabilities = ({hability, description, image, animate=null, initial=null, transition=null, widthImg, heigthImg}) => {
   return (
     <motion.div 
-       className='p-4 border border-emerald-500 flex flex-col gap-1 items-center w-[300px] rounded-xl transition-transform transform hover:scale-110 bg-stone-900 text-slate-300'
+       className='p-4 border border-emerald-500 flex flex-col gap-1 items-center w-[300px] rounded-xl transition-transform transform lg:hover:scale-110 bg-stone-900 text-slate-300'
       >
       <motion.div 
       className="h-[200px] flex justify-center items-center "

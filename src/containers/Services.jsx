@@ -9,7 +9,7 @@ const Services = () => {
   return (
     <div className="flex flex-col items-center  gap-5">
       <div className="p-2 pt-8 w-max flex flex-col items-center border-b border-emerald-500">
-        <h3 className="font-semibold text-lg">Servicios</h3>
+        <h3 className="font-semibold text-xl">Servicios</h3>
         <span>¿Qué puedo hacer?</span>
       </div>
       <div className="flex justify-center flex-wrap p-4 font-Roboto gap-4 mx-[50px]">

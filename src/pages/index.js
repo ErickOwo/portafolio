@@ -5,6 +5,7 @@ import photo from '@images/photo3.jpg';
 import Services from '@containers/Services';
 import Qualities from '@containers/Qualities';
 import Projects from '@containers/Projects';
+import Practice from '@containers/Practice';
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
         <Services />
         <Qualities />
         <Projects />
+        <Practice />
       </main>
     </div>
   );

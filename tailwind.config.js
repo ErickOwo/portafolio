@@ -5,7 +5,8 @@ module.exports = {
   content: ['./src/**/*{html,js,jsx}'],
   theme: {
     fontFamily: {
-      'Roboto': ['Roboto', 'sans-serif']
+      'Roboto': ['Roboto', 'sans-serif'],
+      'mono': ['monospace', 'SFMono-Regular'],
     },
     colors: {
       ...colors

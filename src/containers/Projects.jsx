@@ -15,7 +15,7 @@ const Projects = () => {
       <div className='flex flex-wrap lg:gap-x-32 lg:gap-y-12 gap-4 justify-center '>
         <Project 
           title='Rick And Morty Game App'
-          description='Game App de Memoria creada con React, con interfaz de usuario basada en cookies para mejorar la experiencia de usuario.'
+          description='Game App de Memoria creada con React, con interfaz basada en cookies para mejorar la experiencia de usuario.'
           deploySite='https://rick-and-morty-game-app.vercel.app/'
           githubCode='https://github.com/ErickOwo/Rick-and-Morty-Game'
           image={rmImg} />

@@ -3,9 +3,9 @@ import Image from 'next/image';
 import githubIcon from '@images/github-icon.svg'
 import deployIcon from '@images/deploy-icon.svg'
 
-const Project = ({image, title, description, deploySite, githubCode}) => {
+const Project = ({image, title, description, deploySite, githubCode, practice}) => {
   return (
-    <div className='p-4 border border-emerald-500 md:w-[450px] w-full rounded-lg flex'>
+    <div className={`p-4 border ${practice ? "border-orange-500" : "border-emerald-500"} md:w-[450px] w-full rounded-lg flex`}>
       <div className='w-5/12 my-12'>
         <a 
           href={deploySite}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Task from '@components/Task';
 import TaskForm from '@components/FormTask';
 import Dexie from 'dexie';
@@ -6,51 +6,55 @@ import Dexie from 'dexie';
 const ContainerTasks = () => {
   const [tasks, setTasks] = useState([]);
 
-  // const db = new Dexie("dataBase");
+  const getTasks = async () => {
+    const allPosts = await db.tasks.toArray();
+    setTasks(allPosts);
+  };
 
-  // db.version(1).stores({
-  //   tasks: "id, text, complete, cont"
-  // });
+  useEffect(() => {
+    const getTasks = async () => {
+      const allPosts = await db.tasks.toArray();
+      setTasks(allPosts);
+    };
+    getTasks();
+  });
 
-  // db.open().catch(e => console.log(e));
+  const db = new Dexie('dataBase');
 
-  // IDBrequest.addEventListener("upgradeneeded",()=>{
-  //   const db = IDBrequest.result;
-  //   db.createObjectStore("tasks",{
-  //     autoIncrement: true
-  //   })
-  // });
+  db.version(1).stores({
+    tasks: '++id, text, complete',
+  });
 
-  // IDBrequest.addEventListener("success",()=>{
-  //   // readObjects();
-  // });
-
-  // IDBrequest.addEventListener("error",(e)=>{
-  //   console.log(e);
-  // });
+  db.open().catch((e) => console.log(e));
 
   const addTask = (taskAdded) => {
     taskAdded.text = taskAdded.text.trim();
 
     if (taskAdded.text) {
-      const actualizedTasks = [taskAdded, ...tasks];
-      setTasks(actualizedTasks);
+      db.tasks.add(taskAdded).then(async () => {
+        getTasks();
+      });
     }
   };
 
   const deleteTask = (id) => {
-    const actualizedTasks = tasks.filter((task) => task.id !== id);
-    setTasks(actualizedTasks);
+    db.tasks.delete(id).then(async () => {
+      getTasks();
+    });
   };
 
-  const completeTask = (id) => {
-    const actualizedTasks = tasks.map((task) => {
-      if (task.id === id) {
-        task.complete = !task.complete;
-      }
-      return task;
-    });
-    setTasks(actualizedTasks);
+  const completeTask = async (id) => {
+    let object = await db.tasks.get(id);
+    object.complete = !object.complete;
+    await db.tasks.update(id, object);
+    getTasks();
+    // const actualizedTasks = tasks.map((task) => {
+    //   if (task.id === id) {
+    //     task.complete = !task.complete;
+    //   }
+    //   return task;
+    // });
+    // setTasks(actualizedTasks);
   };
 
   return (

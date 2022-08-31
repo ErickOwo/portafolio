@@ -4,17 +4,14 @@ import { v4 as uuidv4 } from "uuid"
 const TaskForm = ({ onSubmit })=>{
 
   const [input, setInput] = useState("");
-  const [cont, setCont] = useState(1);
   
   const sentHandler = e =>{
     e.preventDefault();
     const newTask = {
       id: uuidv4(),
       text: input,
-      complete: false,
-      cont
+      complete: false
     };
-    setCont(++cont);
     onSubmit(newTask);
   };
 

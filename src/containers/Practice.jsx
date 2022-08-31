@@ -20,7 +20,7 @@ const Practice = () => {
           practice={true} />
       <Project 
           title='Drag and Drop File Reader'
-          description='Lectura de archivos de arrastre y soltado'
+          description='Lectura de archivos de arrastre y soltado.'
           deploySite='/daltocourse/ddreader'
           githubCode='https://github.com/ErickOwo/Curso-Javascript-Dalto/tree/main/Capitulo%2015'
           image={ddreader}
@@ -28,7 +28,7 @@ const Practice = () => {
           landscape={true} />    
       <Project 
           title='Lista de Tareas'
-          description='Organizador de tareas'
+          description='Organizador de tareas con base de datos indexada.'
           deploySite='/freecodecampcourse/tasks'
           githubCode='https://github.com/ErickOwo/React-Practice'
           image={tasks}

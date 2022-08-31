@@ -1,5 +1,6 @@
 import Project from '@components/Project'
 import clockImg from '@images/clock-practice.jpg';
+import ddreader from '@images/ddreader.png'
 
 const Practice = () => {
   return (
@@ -11,11 +12,19 @@ const Practice = () => {
       <div className='flex flex-wrap lg:gap-x-32 lg:gap-y-12 gap-4 justify-center '>
       <Project 
           title='Reloj'
-          description='Creando un Reloj con Javascript y css.'
+          description='Creando un Reloj con Javascript y CSS.'
           deploySite='/daltocourse/clock'
           githubCode='https://github.com/ErickOwo/Curso-Javascript-Dalto/tree/main/Capitulo%2015'
           image={clockImg}
           practice={true} />
+      <Project 
+          title='Drag and Drop File Reader'
+          description='Lectura de archivos de arrastre y soltado'
+          deploySite='/daltocourse/ddreader'
+          githubCode='https://github.com/ErickOwo/Curso-Javascript-Dalto/tree/main/Capitulo%2015'
+          image={ddreader}
+          practice={true}
+          landscape={true} />    
       </div>
     </div>
   )

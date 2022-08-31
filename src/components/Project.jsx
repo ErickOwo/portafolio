@@ -3,14 +3,14 @@ import Image from 'next/image';
 import githubIcon from '@images/github-icon.svg'
 import deployIcon from '@images/deploy-icon.svg'
 
-const Project = ({image, title, description, deploySite, githubCode, practice}) => {
+const Project = ({image, title, description, deploySite, githubCode, practice, landscape}) => {
   return (
     <div className={`p-4 border ${practice ? "border-orange-500" : "border-emerald-500"} md:w-[450px] w-full rounded-lg flex`}>
-      <div className='w-5/12 my-12'>
+      <div className='w-5/12 my-12 flex items-center'>
         <a 
           href={deploySite}
           target='_blank' >
-            <Image src={image} width='290px' height='540px'/>
+            <Image src={image} width={landscape ? '420px' :'290px'} height={landscape ? '190px' :'540px'}/>
         </a>  
       </div>
       <div className='py-3 px-5 w-full flex flex-col justify-between'>

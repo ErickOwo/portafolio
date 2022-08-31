@@ -7,6 +7,7 @@ module.exports = {
     fontFamily: {
       'Roboto': ['Roboto', 'sans-serif'],
       'mono': ['monospace', 'SFMono-Regular'],
+      'lato': ['Lato', 'sans-serif']
     },
     colors: {
       ...colors

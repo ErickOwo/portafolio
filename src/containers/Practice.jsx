@@ -1,6 +1,7 @@
 import Project from '@components/Project'
 import clockImg from '@images/clock-practice.jpg';
-import ddreader from '@images/ddreader.png'
+import ddreader from '@images/ddreader.png';
+import tasks from '@images/tasks-practice.jpg'
 
 const Practice = () => {
   return (
@@ -25,6 +26,13 @@ const Practice = () => {
           image={ddreader}
           practice={true}
           landscape={true} />    
+      <Project 
+          title='Lista de Tareas'
+          description='Organizador de tareas'
+          deploySite='/freecodecampcourse/tasks'
+          githubCode='https://github.com/ErickOwo/React-Practice'
+          image={tasks}
+          practice={true} />      
       </div>
     </div>
   )

@@ -1,9 +1,33 @@
 import React, { useState } from 'react';
 import Task from '@components/Task';
 import TaskForm from '@components/FormTask';
+import Dexie from 'dexie';
 
 const ContainerTasks = () => {
   const [tasks, setTasks] = useState([]);
+
+  // const db = new Dexie("dataBase");
+
+  // db.version(1).stores({
+  //   tasks: "id, text, complete, cont"
+  // });
+
+  // db.open().catch(e => console.log(e));
+
+  // IDBrequest.addEventListener("upgradeneeded",()=>{
+  //   const db = IDBrequest.result;
+  //   db.createObjectStore("tasks",{
+  //     autoIncrement: true
+  //   })
+  // });
+
+  // IDBrequest.addEventListener("success",()=>{
+  //   // readObjects();
+  // });
+
+  // IDBrequest.addEventListener("error",(e)=>{
+  //   console.log(e);
+  // });
 
   const addTask = (taskAdded) => {
     taskAdded.text = taskAdded.text.trim();

@@ -134,7 +134,7 @@ const ddreader = () => {
           ) : null
         )}
       </div>
-      <div className="lg:hidden flex w-full min-h-screen top-0 bg-black text-white absolute">
+      <div className="lg:hidden flex w-full min-h-screen top-0 bg-black text-white fixed">
         <span className="m-auto text-center p-5">Para probar este contenido debe conectarse desde un ordenador</span>
       </div>
     </div>

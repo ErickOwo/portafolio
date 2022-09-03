@@ -2,7 +2,8 @@ import Project from '@components/Project'
 import clockImg from '@images/clock-practice.jpg';
 import ddreader from '@images/ddreader.png';
 import tasks from '@images/tasks-practice.jpg';
-import langImg from '@images/languaje-practice.jpg'
+import langImg from '@images/languaje-practice.jpg';
+import texturesImg from '@images/textures-practice.png';
 
 const Practice = () => {
   return (
@@ -12,35 +13,43 @@ const Practice = () => {
         <span className='text-center'>Practicas realizadas a lo largo del aprendizaje de las mismas.</span>
       </div>
       <div className='flex flex-wrap lg:gap-x-32 lg:gap-y-12 gap-4 justify-center '>
-      <Project 
+        <Project 
           title='Reloj'
           description='Creando un Reloj con Javascript y CSS.'
           deploySite='/daltocourse/clock'
           githubCode='https://github.com/ErickOwo/Curso-Javascript-Dalto/tree/main/Capitulo%2015'
           image={clockImg}
           practice={true} />
-      <Project 
-          title='Drag and Drop File Reader'
+        <Project 
+          title='Arrastre y soltado con lector de archivos'
           description='Lectura de archivos de arrastre y soltado.'
           deploySite='/daltocourse/ddreader'
           githubCode='https://github.com/ErickOwo/Curso-Javascript-Dalto/tree/main/Capitulo%2015'
           image={ddreader}
           practice={true}
           landscape={true} />    
-      <Project 
+        <Project 
           title='Lista de Tareas'
           description='Organizador de tareas con base de datos indexada.'
           deploySite='/freecodecampcourse/tasks'
           githubCode='https://github.com/ErickOwo/React-Practice'
           image={tasks}
           practice={true} />      
-      <Project 
+        <Project 
           title='Página en idiomas'
-          description='Intercambio de idioma en la página con código. La información de la página se guarda en cookies para guardar la información de preferencia de idioma del usuario.'
+          description='Intercambio de idioma de la página con código. La información de la página se guarda en cookies para guardar la información de preferencia de idioma del usuario.'
           deploySite='/daltocourse/languaje'
           githubCode='https://github.com/ErickOwo/Curso-Javascript-Dalto/tree/main/Capitulo%2015'
           image={langImg}
-          practice={true} />      
+          practice={true} />  
+        <Project 
+          title='Arrastre de texturas'
+          description='Texturizador dinámico'
+          deploySite='/daltocourse/textures'
+          githubCode='https://github.com/ErickOwo/Curso-Javascript-Dalto/tree/main/Capitulo%2015'
+          image={texturesImg}
+          practice={true}
+          landscape={true} />     
       </div>
     </div>
   )

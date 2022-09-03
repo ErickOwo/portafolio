@@ -5,6 +5,7 @@ import tasks from '@images/tasks-practice.jpg';
 import langImg from '@images/languaje-practice.jpg';
 import texturesImg from '@images/textures-practice.png';
 import drawer from '@images/drawer.png';
+import calculatorImg from '@images/calculator-practice.jpg'
 
 const Practice = () => {
   return (
@@ -53,12 +54,19 @@ const Practice = () => {
           landscape={true} />    
         <Project 
           title='Paint'
-          description='Zona de dibujo sencilla imitando el programa de paint en una página web.'
+          description='Zona de dibujo imitando el programa de paint en una página web.'
           deploySite='/daltocourse/drawer'
           githubCode='https://github.com/ErickOwo/Curso-Javascript-Dalto/tree/main/Capitulo%2015'
           image={drawer}
           practice={true}
           landscape={true} />    
+        <Project 
+          title='Calculadora'
+          description='Calculadora sencilla para operaciones básicas.'
+          deploySite='/freecodecamp/calculator'
+          githubCode='https://github.com/ErickOwo/React-Practice'
+          image={calculatorImg}
+          practice={true} />  
       </div>
     </div>
   )

@@ -50,10 +50,10 @@ const Languaje = () => {
           <motion.div initial="close" variants={variants} animate={appear ? 'open' : 'close'} className="m-auto mt-32 bg-white w-full max-w-[600px] h-[160px] flex flex-col">
             <h3 className="text-xl w-full text-center mb-4 mt-8">¿En qué idioma desea visualizar la página?</h3>
             <div className="p-5 flex gap-8 justify-center">
-              <button className="bg-slate-200/90 w-24 hover:bg-slate-400/80" type="button" value="es" onClick={(e) => handleClic('es')}>
+              <button className="bg-slate-200/90 w-24 hover:bg-slate-400/80" type="button" value="es" onClick={() => handleClic('es')}>
                 Español
               </button>
-              <button className="bg-slate-200/90 w-24 hover:bg-slate-400/80" type="button" value="en" onClick={(e) => handleClic('en')}>
+              <button className="bg-slate-200/90 w-24 hover:bg-slate-400/80" type="button" value="en" onClick={() => handleClic('en')}>
                 Ingles
               </button>
             </div>

@@ -6,7 +6,7 @@ import deployIcon from '@images/deploy-icon.svg'
 const Project = ({image, title, description, deploySite, githubCode, practice, landscape}) => {
   return (
     <div className={`p-4 border ${practice ? "border-orange-500" : "border-emerald-500"} md:w-[450px] w-full rounded-lg flex`}>
-      <div className='w-5/12 my-12 flex items-center'>
+      <div className='w-5/12 h-[220px] my-12 flex items-center'>
         <a 
           href={deploySite}
           target='_blank' >

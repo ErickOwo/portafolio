@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 import jsCookie from 'js-cookie';
 
 const Languaje = () => {
   const [appear, setAppear] = useState(true);
   const [languaje, setLanguaje] = useState(true);
   const [closeModal, setCloseModal] = useState(true);
+
 
   useEffect(() => {
     if (jsCookie.get('lang-page')) setLanguaje(jsCookie.get('lang-page'));
@@ -80,4 +81,4 @@ const Languaje = () => {
   );
 };
 
-export default Languaje;
+export default Languaje

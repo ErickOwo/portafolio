@@ -1,7 +1,8 @@
 import Project from '@components/Project'
 import clockImg from '@images/clock-practice.jpg';
 import ddreader from '@images/ddreader.png';
-import tasks from '@images/tasks-practice.jpg'
+import tasks from '@images/tasks-practice.jpg';
+import langImg from '@images/languaje-practice.jpg'
 
 const Practice = () => {
   return (
@@ -32,6 +33,13 @@ const Practice = () => {
           deploySite='/freecodecampcourse/tasks'
           githubCode='https://github.com/ErickOwo/React-Practice'
           image={tasks}
+          practice={true} />      
+      <Project 
+          title='Página en idiomas'
+          description='Intercambio de idioma en la página con código. La información de la página se guarda en cookies para guardar la información de preferencia de idioma del usuario.'
+          deploySite='/daltocourse/languaje'
+          githubCode='https://github.com/ErickOwo/Curso-Javascript-Dalto/tree/main/Capitulo%2015'
+          image={langImg}
           practice={true} />      
       </div>
     </div>

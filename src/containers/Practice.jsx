@@ -5,7 +5,8 @@ import tasks from '@images/tasks-practice.jpg';
 import langImg from '@images/languaje-practice.jpg';
 import texturesImg from '@images/textures-practice.png';
 import drawer from '@images/drawer.png';
-import calculatorImg from '@images/calculator-practice.jpg'
+import calculatorImg from '@images/calculator-practice.jpg';
+import storeImage from '@images/store.jpg'
 
 const Practice = () => {
   return (
@@ -67,6 +68,13 @@ const Practice = () => {
           githubCode='https://github.com/ErickOwo/React-Practice'
           image={calculatorImg}
           practice={true} />  
+        <Project 
+          title='Tienda Virtual'
+          description='Creación de app WEB para compras trabajando con React y Next JS.'
+          deploySite='https://nextcoursemodified.vercel.app/'
+          githubCode='https://github.com/ErickOwo/nextcourse'
+          image={storeImg}
+          practice={true} />   
       </div>
     </div>
   )

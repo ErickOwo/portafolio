@@ -73,7 +73,7 @@ const Practice = () => {
           description='Creación de app WEB para compras trabajando con React y Next JS.'
           deploySite='https://nextcoursemodified.vercel.app/'
           githubCode='https://github.com/ErickOwo/nextcourse'
-          image={storeImg}
+          image={storeImage}
           practice={true} />   
       </div>
     </div>

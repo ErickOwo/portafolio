@@ -64,7 +64,7 @@ const Practice = () => {
         <Project 
           title='Calculadora'
           description='Calculadora sencilla para operaciones básicas.'
-          deploySite='/freecodecamp/calculator'
+          deploySite='/freecodecampcourse/calculator'
           githubCode='https://github.com/ErickOwo/React-Practice'
           image={calculatorImg}
           practice={true} />  

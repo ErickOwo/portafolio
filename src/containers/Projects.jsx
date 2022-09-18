@@ -4,6 +4,7 @@ import rmImg from '@images/R&M-Project.jpg';
 import adminUAMImg from '@images/admin-uam-project.jpg';
 import uamPageImg from '@images/uam-page.jpg';
 import sportownPageImg from '@images/sportown-page.jpg'
+import streamPlayImg from '@images/stream-play.jpg'
 
 const Projects = () => {
   return (
@@ -37,6 +38,12 @@ const Projects = () => {
           deploySite='https://sportown-page.vercel.app/'
           githubCode='https://github.com/ErickOwo/sportown-page'
           image={sportownPageImg} />  
+        <Project 
+          title='Stream Play Project'
+          description='Plataforma de venta de plataformas de streaming y próximamente otros productos.'
+          deploySite='https://stream-play.vercel.app/'
+          githubCode='https://github.com/ErickOwo/stream-play'
+          image={streamPlayImg} /> 
       </div>
     </div>
   )

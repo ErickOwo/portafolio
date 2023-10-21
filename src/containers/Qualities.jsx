@@ -26,6 +26,10 @@ import nodeIcon from "@images/node-js-2-icon.png";
 import expressIcon from "@images/express-icon.png";
 import mongoIcon from "@images/mongodb-icon.svg";
 
+import pythonIcon from "@images/python-logo.png"
+import javaIcon from "@images/java-logo.png"
+import sqlIcon from "@images/sql-logo.png"
+
 const Qualities = () => {
   return (
     <div className="flex flex-col items-center gap-5 mt-20">
@@ -35,13 +39,11 @@ const Qualities = () => {
       </div>
       <div>
         <h3 
-          className="font-semibold text-lg text-stone-700 text-center" >
+          className="font-semibold text-lg text-slate-300 text-center" >
             Herramientas de desarrollo
         </h3>
-        <div className="flex flex-wrap gap-4 justify-center p-4 my-6 border border-stone-500/20 rounded-lg">
-          <CardQuality
-            image={linuxIcon}
-            description='Linux Terminal' />
+        <div className="flex flex-wrap gap-4 justify-center p-4 my-6  rounded-lg">
+
           <CardQuality
             image={visualStudioCodeIcon}
             description='Visual Studio Code' />
@@ -55,10 +57,10 @@ const Qualities = () => {
       </div>
       <div>
         <h3 
-          className="font-semibold text-lg text-stone-700 text-center" >
+          className="font-semibold text-lg text-slate-300 text-center" >
             Herramientas de diseño
         </h3>
-        <div className="flex flex-wrap gap-4 justify-center p-4 my-6 border border-stone-500/20 rounded-lg">
+        <div className="flex flex-wrap gap-4 justify-center p-4 my-6  rounded-lg">
           <CardQuality
             image={gimpIcon}
             description='Gimp' />
@@ -69,10 +71,10 @@ const Qualities = () => {
       </div>
       <div>
         <h3 
-          className="font-semibold text-lg text-stone-700 text-center" >
+          className="font-semibold text-lg text-slate-300 text-center" >
             Herramientas de maquetación web y deploy
         </h3>
-        <div className="flex flex-wrap gap-4 justify-center p-4 my-6 border border-stone-500/20 rounded-lg">
+        <div className="flex flex-wrap gap-4 justify-center p-4 my-6  rounded-lg">
           <CardQuality
             image={nextIcon}
             description='Next JS' />
@@ -91,10 +93,10 @@ const Qualities = () => {
       </div>
       <div>
         <h3 
-          className="font-semibold text-lg text-stone-700 text-center" >
+          className="font-semibold text-lg text-slate-300 text-center" >
             Javascript
         </h3>
-        <div className="flex flex-wrap gap-4 justify-center p-4 my-6 border border-stone-500/20 rounded-lg">
+        <div className="flex flex-wrap gap-4 justify-center p-4 my-6  rounded-lg">
           <CardQuality
             image={javascriptIcon}
             description='Javascript' />
@@ -128,6 +130,25 @@ const Qualities = () => {
           <CardQuality
             image={mongoIcon}
             description='Mongo DB' />
+        </div>
+      <div>
+        
+        <h3 
+            className="font-semibold text-lg text-slate-300 text-center" >
+              Otros lenguajes
+          </h3>
+        <div className="flex flex-wrap gap-4 justify-center p-4 my-6  rounded-lg">
+            
+            <CardQuality
+              image={pythonIcon}
+              description='Python' />
+            <CardQuality
+              image={javaIcon}
+              description='Java' />
+            <CardQuality
+              image={sqlIcon}
+              description='SQL' />
+          </div>
         </div>
       </div>
     </div>

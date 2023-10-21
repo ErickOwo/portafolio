@@ -5,7 +5,7 @@ import deployIcon from '@images/deploy-icon.svg'
 
 const Project = ({image, title, description, deploySite, githubCode, practice, landscape}) => {
   return (
-    <div className={`p-4 border ${practice ? "border-orange-500" : "border-emerald-500"} md:w-[450px] w-full rounded-lg flex`}>
+    <div className={`p-4 border bg-black/30 mx-2 text-white ${practice ? "border-orange-500" : "border-emerald-500"} md:w-[450px] w-full rounded-lg flex`}>
       <div className='w-5/12 h-[220px] my-12 flex items-center'>
         <a 
           href={deploySite}
@@ -15,8 +15,8 @@ const Project = ({image, title, description, deploySite, githubCode, practice, l
       </div>
       <div className='py-3 px-5 w-full flex flex-col justify-between'>
         <div className='font-Roboto flex flex-col h-full'>
-          <h2 className='md:text-2xl text-lg font-semibold text-gray-700 text-center'>{ title }</h2>
-          <p className='text-center py-4 h-full flex items-center text-gray-800 md:text-lg'>{ description }</p>
+          <h2 className='md:text-2xl text-lg font-semibold text-gray-100 text-center'>{ title }</h2>
+          <p className='text-center py-4 h-full flex items-center text-gray-200 md:text-lg'>{ description }</p>
         </div>
         <div>
           <div className='flex gap-5 md:gap-8 justify-center'>

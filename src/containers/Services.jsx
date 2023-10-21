@@ -25,7 +25,7 @@ const Services = () => {
         />
         <CardHabilities
           image={frontendIcon}
-          hability="Vanilla JS Frontend"
+          hability="JS Frontend"
           description="Páginas web de mediana y baja complejidad como Blogs, Portales Web y Sitios Estáticos. Consultas Integradas a APIs propias o de terceros."
           widthImg='190px'
           heigthImg='120px'
@@ -37,7 +37,7 @@ const Services = () => {
         <CardHabilities
           image={servidorBases}
           hability="Servidor y Bases de Datos Backend"
-          description="Modelo de Bases de datos para almacenar información modificable dinámicamente."
+          description="Modelo de Bases de datos para almacenar información modificable."
           widthImg='190px'
           heigthImg='120px'
           animate={{ scale: [1.05, 1.15, 1.05] }}

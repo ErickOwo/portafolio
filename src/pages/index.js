@@ -15,7 +15,7 @@ import Practice from '@containers/Practice';
 export default function Home() {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [mobileMenuAnimation, setMobileMenuAnimation] = useState(false);
-  const [english, setEnglish] = useState(false);
+  const [english, setEnglish] = useState(true);
 
   const variantsMobileMenu = {
     show: {

@@ -68,8 +68,8 @@ const Languaje = () => {
           </div>
         ) : languaje == 'en' ? (
           <div className="flex flex-col gap-5 lg:gap-2">
-            <h3 className="text-xl">You have been choose the english language to the page</h3>
-            <p>Welcome. This is a show of how you can see a page in differents types of languages with code.</p>
+            <h3 className="text-xl">You have chosen the english language for this page</h3>
+            <p>Welcome. This is demostration that how you can see a page in differents types of languages with code.</p>
           </div>
         ) : null}
       </div>

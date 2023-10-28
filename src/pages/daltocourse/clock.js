@@ -83,7 +83,9 @@ const Clock = () => {
           <div className="md:py-5 md:px-9 py-3 px-5 border-white border-l-2">{sec}</div>
         </div>
         <div className="flex text-slate-100 md:text-lg mt-4">
-          <div className="day">{`${day} ${date} ${month} ${year}`}</div>
+          <div className="day">{
+            day?`${day} ${date} ${month} ${year}`: null 
+          }</div>
         </div>
       </div>
     </div>

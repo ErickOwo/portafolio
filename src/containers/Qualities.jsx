@@ -30,17 +30,17 @@ import pythonIcon from "@images/python-logo.png"
 import javaIcon from "@images/java-logo.png"
 import sqlIcon from "@images/sql-logo.png"
 
-const Qualities = () => {
+const Qualities = ({english}) => {
   return (
     <div className="flex flex-col items-center gap-5 mt-20">
       <div className="p-2 pt-8 w-max flex flex-col items-center border-b border-emerald-500">
-        <h3 className="font-semibold text-xl">Aptitudes</h3>
-        <span>¿Con qué tecnologías trabajo?</span>
+        <h3 className="font-semibold text-xl">{english?'Skills':'Aptitudes'}</h3>
+        <span>{english ? 'Which technologies do I use?' : '¿Con qué tecnologías trabajo?'}</span>
       </div>
       <div>
         <h3 
           className="font-semibold text-lg text-slate-300 text-center" >
-            Herramientas de desarrollo
+            {english ? 'Development Tools' : 'Herramientas de desarrollo'}
         </h3>
         <div className="flex flex-wrap gap-4 justify-center p-4 my-6  rounded-lg">
 
@@ -58,7 +58,7 @@ const Qualities = () => {
       <div>
         <h3 
           className="font-semibold text-lg text-slate-300 text-center" >
-            Herramientas de diseño
+            {english ? 'Design Tools' : 'Herramientas de diseño'}
         </h3>
         <div className="flex flex-wrap gap-4 justify-center p-4 my-6  rounded-lg">
           <CardQuality
@@ -72,7 +72,7 @@ const Qualities = () => {
       <div>
         <h3 
           className="font-semibold text-lg text-slate-300 text-center" >
-            Herramientas de maquetación web y deploy
+            {english ? 'Web layout and Deployment Tools' : 'Herramientas de maquetación Web y Despliegue'}
         </h3>
         <div className="flex flex-wrap gap-4 justify-center p-4 my-6  rounded-lg">
           <CardQuality
@@ -135,7 +135,7 @@ const Qualities = () => {
         
         <h3 
             className="font-semibold text-lg text-slate-300 text-center" >
-              Otros lenguajes
+              {english ? 'Other languajes':'Otros lenguajes'}
           </h3>
         <div className="flex flex-wrap gap-4 justify-center p-4 my-6  rounded-lg">
             
